@@ -1,4 +1,11 @@
 public class Implementation implements ILearning {
+
+    //Variables
+    //These are the private variables for
+    //the Implementation class
+    //Example:
+    String decompositionString = "";
+    //Continue with private variables
     @Override
     public void Store() {
         //store in memory
