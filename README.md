@@ -1,2 +1,2 @@
 # Swiss-Army-Knife-Learning-Interface
-A hard coded software and learning algorithm interface
+Computer-Human Interface based on the swiss army knife mental model.
