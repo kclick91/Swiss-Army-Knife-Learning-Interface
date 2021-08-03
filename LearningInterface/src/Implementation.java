@@ -1,5 +1,13 @@
 public class Implementation implements ILearning {
+    private String name;
+    public Implementation()
+    {
 
+    }
+    public Implementation(String n)
+    {
+        name = n;
+    }
     //Variables
     //These are the private variables for
     //the Implementation class
@@ -224,5 +232,49 @@ public class Implementation implements ILearning {
     public int WeighOptions(Object firstOption, Object secondOption) {
         //Weight two options
         return 0;
+    }
+
+    @Override
+    public void PrintAll() {
+        Implementation imp = new Implementation();
+        imp.Store(); //store in memory
+        imp.Synthesize(new Object(), new Object()); //synthesize
+        imp.Decompose(new Object()); //decompose an object
+        imp.Link(new Object(), new Object()); //Link separate objects
+        imp.Categorize(new Object()); //Categorize objects
+        imp.Detect(); //detect
+        imp.Detect(new Object()); //detect something specific
+        imp.UnderstandConsequences(); //look ahead
+        imp.ExplainEvents(); //explain how or why something happened
+        imp.ExplainItself(); //explain how it made a decision
+        imp.ImproveSelf(); //Improve it's own algorithm
+        imp.Calculate(); //General calculation
+        imp.Train(); //Practice, train on data, inputs
+        imp.Train(new Object()); //Practice with something specific
+        imp.FindSimilarities(new Object(), new Object()); //find similarities
+        imp.FindDifferences(new Object(), new Object()); //find differences
+        imp.DefendDecision(new Object()); //Hold its ground
+        imp.UseIntuition(); //Up to you
+        imp.Imagine(); //Represent a fictional input
+        imp.Teach(); //Teach humans or other AI
+        imp.FindInsight(); //Be insightful
+        imp.FindBias(); //Detect and return a name of a bias
+        imp.FindFallacy(); //Detect and return a name of a fallacy
+        imp.SeekReward(); //Learn from rewards
+        imp.AvoidPunishment(); //Learn to avoid punishment
+        imp.Translate(new Object()); //Translate languages or anything in general
+        imp.Name(); //Come up with a name for a concept
+        imp.Rate(); //Grade, rate with numbers, stars, etc.
+        imp.Conclude(new String()); //Reason with input
+        imp.TransferKnowledge(); //Transfer knowledge to another domain
+        imp.PayAttentionTo(new Object()); //Focus
+        imp.Understand(new Object()); //Works to store preparations for similar objects
+        imp.Strategize(); //Strategy
+        imp.UseTactic(new Object()); //Tactics
+        imp.WriteAlgorithm(); //Update code
+        imp.DoesUnderstand(new Object()); //User checks if something is understood
+        imp.GiveBigPicture(); //Think holistically
+        imp.ExpressABelief(new String()); //Returns whether a statement is true or false
+        imp.WeighOptions(new Object(), new Object()); //returns 0 for first or 1 for second OR anything that is preferred
     }
 }
