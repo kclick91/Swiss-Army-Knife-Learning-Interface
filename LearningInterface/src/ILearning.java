@@ -40,6 +40,7 @@ public interface ILearning {
     String GiveBigPicture(); //Think holistically
     Boolean ExpressABelief(String s); //Returns whether a statement is true or false
     int WeighOptions(Object firstOption, Object secondOption); //returns 0 for first or 1 for second OR anything that is preferred
+    
 
 
 
