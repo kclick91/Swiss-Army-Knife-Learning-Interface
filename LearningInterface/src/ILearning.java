@@ -41,6 +41,7 @@ public interface ILearning {
     Boolean ExpressABelief(String s); //Returns whether a statement is true or false
     int WeighOptions(Object firstOption, Object secondOption); //returns 0 for first or 1 for second OR anything that is preferred
     void PrintAll(); //Print everything as everything or a summary
+    String[] BlackBox(String input, String output); //Reveals the outputs and inputs of black boxes
 
 
 

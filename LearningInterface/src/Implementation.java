@@ -235,7 +235,13 @@ public class Implementation implements ILearning {
     }
 
     @Override
+    public String[] BlackBox(String input, String output) {
+        return new String[0];
+    }
+
+    @Override
     public void PrintAll() {
+        //System.out.println();
         Implementation imp = new Implementation();
         imp.Store(); //store in memory
         imp.Synthesize(new Object(), new Object()); //synthesize
@@ -276,5 +282,7 @@ public class Implementation implements ILearning {
         imp.GiveBigPicture(); //Think holistically
         imp.ExpressABelief(new String()); //Returns whether a statement is true or false
         imp.WeighOptions(new Object(), new Object()); //returns 0 for first or 1 for second OR anything that is preferred
+        imp.BlackBox(new String(), new String()); // Understand black boxes
+
     }
 }
