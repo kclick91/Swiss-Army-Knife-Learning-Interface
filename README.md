@@ -7,3 +7,7 @@ Step 1. Add method to interface
 Step 2. Add method to implementation example
 Step 3. Add method to Print All function
 Step 4. Work on implementation
+
+## Suggestions
+Call preliminary functions in the class.
+Ex. Function3(){Function1(); Function2()};
