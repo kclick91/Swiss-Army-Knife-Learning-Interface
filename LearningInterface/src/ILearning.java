@@ -1,7 +1,8 @@
+import java.io.IOException;
 
 //Swiss Army Knife mental model applied to programming
 public interface ILearning {
-    void Store(); //store in memory
+    void Store() throws IOException; //store in memory
     void Synthesize(Object o, Object otwo); //synthesize
     void Decompose(Object o); //decompose an object
     void Link(Object O, Object o); //Link separate objects
@@ -40,8 +41,9 @@ public interface ILearning {
     String GiveBigPicture(); //Think holistically
     Boolean ExpressABelief(String s); //Returns whether a statement is true or false
     int WeighOptions(Object firstOption, Object secondOption); //returns 0 for first or 1 for second OR anything that is preferred
-    void PrintAll(); //Print everything as everything or a summary
     String[] BlackBox(String input, String output); //Reveals the outputs and inputs of black boxes
+    String[] ScrambleMethodsHierarchically(); //Scramble and return the methods' levels in the hierarchy
+    void PrintAll() throws IOException; //Print everything as everything or a summary
 
 
 

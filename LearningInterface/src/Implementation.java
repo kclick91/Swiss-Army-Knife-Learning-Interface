@@ -1,5 +1,9 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class Implementation implements ILearning {
-    private String name;
+    //Augmenting the reading/studying of a history book
+    private String name = "History_Book_Augmentation";
     public Implementation()
     {
 
@@ -12,16 +16,21 @@ public class Implementation implements ILearning {
     //These are the private variables for
     //the Implementation class
     //Example:
-    String decompositionString = "";
+    String description;
     //Continue with private variables
     @Override
-    public void Store() {
+    public void Store() throws IOException {
         //store in memory
+        FileWriter myWriter = new FileWriter("filename.txt");
+        myWriter.write("Summary of History Book.");
+        myWriter.close();
     }
 
     @Override
     public void Synthesize(Object o, Object otwo) {
         //take common features from o and otwo
+
+
     }
 
     @Override
@@ -235,12 +244,17 @@ public class Implementation implements ILearning {
     }
 
     @Override
+    public String[] ScrambleMethodsHierarchically() {
+        return new String[0];
+    }
+
+    @Override
     public String[] BlackBox(String input, String output) {
         return new String[0];
     }
 
     @Override
-    public void PrintAll() {
+    public void PrintAll() throws IOException {
         //System.out.println();
         Implementation imp = new Implementation();
         imp.Store(); //store in memory
@@ -283,6 +297,7 @@ public class Implementation implements ILearning {
         imp.ExpressABelief(new String()); //Returns whether a statement is true or false
         imp.WeighOptions(new Object(), new Object()); //returns 0 for first or 1 for second OR anything that is preferred
         imp.BlackBox(new String(), new String()); // Understand black boxes
+        imp.ScrambleMethodsHierarchically();//Scramble the levels of hierarchy, In F(G()) F is higher in the hierarchy.
 
     }
 }
