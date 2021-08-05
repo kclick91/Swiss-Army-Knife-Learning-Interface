@@ -43,6 +43,7 @@ public interface ILearning {
     int WeighOptions(Object firstOption, Object secondOption); //returns 0 for first or 1 for second OR anything that is preferred
     String[] BlackBox(String input, String output); //Reveals the outputs and inputs of black boxes
     String[] ScrambleMethodsHierarchically(); //Scramble and return the methods' levels in the hierarchy
+    int AssignValue(Object o); //Assign numerical value to abstractions, successes, information,etc.
     void PrintAll() throws IOException; //Print everything as everything or a summary
 
 

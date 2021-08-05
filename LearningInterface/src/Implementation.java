@@ -254,6 +254,11 @@ public class Implementation implements ILearning {
     }
 
     @Override
+    public int AssignValue(Object o) {
+        return 0;
+    }
+
+    @Override
     public void PrintAll() throws IOException {
         //System.out.println();
         Implementation imp = new Implementation();
@@ -298,6 +303,7 @@ public class Implementation implements ILearning {
         imp.WeighOptions(new Object(), new Object()); //returns 0 for first or 1 for second OR anything that is preferred
         imp.BlackBox(new String(), new String()); // Understand black boxes
         imp.ScrambleMethodsHierarchically();//Scramble the levels of hierarchy, In F(G()) F is higher in the hierarchy.
+        imp.AssignValue(new Object());//Assigns value to something
 
     }
 }
