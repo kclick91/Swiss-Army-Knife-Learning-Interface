@@ -259,6 +259,16 @@ public class Implementation implements ILearning {
     }
 
     @Override
+    public void LearnorTeachByAnalogy(Object o, Object otwo) {
+
+    }
+
+    @Override
+    public void LearnByFirstPrinciples(Object o) {
+
+    }
+
+    @Override
     public void PrintAll() throws IOException {
         //System.out.println();
         Implementation imp = new Implementation();
@@ -304,6 +314,8 @@ public class Implementation implements ILearning {
         imp.BlackBox(new String(), new String()); // Understand black boxes
         imp.ScrambleMethodsHierarchically();//Scramble the levels of hierarchy, In F(G()) F is higher in the hierarchy.
         imp.AssignValue(new Object());//Assigns value to something
+        imp.LearnorTeachByAnalogy(new Object(), new Object()); //Think with analogies
+        imp.LearnByFirstPrinciples(new Object()); //Think with First Principles
 
     }
 }

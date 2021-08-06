@@ -44,6 +44,8 @@ public interface ILearning {
     String[] BlackBox(String input, String output); //Reveals the outputs and inputs of black boxes
     String[] ScrambleMethodsHierarchically(); //Scramble and return the methods' levels in the hierarchy
     int AssignValue(Object o); //Assign numerical value to abstractions, successes, information,etc.
+    void LearnorTeachByAnalogy(Object o, Object otwo); //Think with analogies
+    void LearnByFirstPrinciples(Object o); //First Principles
     void PrintAll() throws IOException; //Print everything as everything or a summary
 
 
