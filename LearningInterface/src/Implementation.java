@@ -206,7 +206,10 @@ public class Implementation implements ILearning {
 
     @Override
     public void Strategize() {
-        //Think of a strategy
+        //Think of a strategy(int the case of the history book a strategy on how it will be understood
+        //1.https://en.wikipedia.org/wiki/Strategy
+        //2.https://www.strategyskills.com/what-is-strategy/
+        //1. Resource allocation     2. Unique system of activity     3. Achieve a goal.
     }
 
     @Override
