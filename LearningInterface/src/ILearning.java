@@ -47,7 +47,7 @@ public interface ILearning {
     void LearnorTeachByAnalogy(Object o, Object otwo); //Think with analogies
     void LearnByFirstPrinciples(Object o); //First Principles
     void PrintAll() throws IOException; //Print everything as everything or a summary
-
+    String ExpressCuriosity(); //Place value on something without being programmed to value a specific thing
 
 
 

@@ -86,6 +86,7 @@ public class Implementation implements ILearning {
     public void Calculate() {
         //General calculations, similar to understanding consequences but more exact
 
+
     }
 
     @Override
@@ -269,6 +270,11 @@ public class Implementation implements ILearning {
     }
 
     @Override
+    public String ExpressCuriosity() {
+        return null;
+    }
+
+    @Override
     public void PrintAll() throws IOException {
         //System.out.println();
         Implementation imp = new Implementation();
@@ -316,6 +322,7 @@ public class Implementation implements ILearning {
         imp.AssignValue(new Object());//Assigns value to something
         imp.LearnorTeachByAnalogy(new Object(), new Object()); //Think with analogies
         imp.LearnByFirstPrinciples(new Object()); //Think with First Principles
+        imp.ExpressCuriosity(); //Value knowing something without being programmed to value that specific thing
 
     }
 }
