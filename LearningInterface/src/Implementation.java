@@ -27,6 +27,11 @@ public class Implementation implements ILearning {
     }
 
     @Override
+    public String ReturnData() {
+        return null;
+    }
+
+    @Override
     public void Synthesize(Object o, Object otwo) {
         //take common features from o and otwo
 
@@ -210,6 +215,7 @@ public class Implementation implements ILearning {
         //1.https://en.wikipedia.org/wiki/Strategy
         //2.https://www.strategyskills.com/what-is-strategy/
         //1. Resource allocation     2. Unique system of activity     3. Achieve a goal.
+
     }
 
     @Override
@@ -282,6 +288,7 @@ public class Implementation implements ILearning {
         //System.out.println();
         Implementation imp = new Implementation();
         imp.Store(); //store in memory
+        imp.ReturnData();// return data
         imp.Synthesize(new Object(), new Object()); //synthesize
         imp.Decompose(new Object()); //decompose an object
         imp.Link(new Object(), new Object()); //Link separate objects

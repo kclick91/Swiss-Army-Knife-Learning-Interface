@@ -3,6 +3,7 @@ import java.io.IOException;
 //Swiss Army Knife mental model applied to programming
 public interface ILearning {
     void Store() throws IOException; //store in memory
+    String ReturnData();//access the data
     void Synthesize(Object o, Object otwo); //synthesize
     void Decompose(Object o); //decompose an object
     void Link(Object O, Object o); //Link separate objects
