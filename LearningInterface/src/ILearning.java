@@ -49,6 +49,7 @@ public interface ILearning {
     void LearnByFirstPrinciples(Object o); //First Principles
     void PrintAll() throws IOException; //Print everything as everything or a summary
     String ExpressCuriosity(); //Place value on something without being programmed to value a specific thing
+    String[] WorkBackwards(String[] st);//start from the goal and work backwards
 
 
 

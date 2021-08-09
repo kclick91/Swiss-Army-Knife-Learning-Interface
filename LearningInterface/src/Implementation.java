@@ -284,6 +284,11 @@ public class Implementation implements ILearning {
     }
 
     @Override
+    public String[] WorkBackwards(String[] st) {
+        return new String[0];
+    }
+
+    @Override
     public void PrintAll() throws IOException {
         //System.out.println();
         Implementation imp = new Implementation();
@@ -333,6 +338,7 @@ public class Implementation implements ILearning {
         imp.LearnorTeachByAnalogy(new Object(), new Object()); //Think with analogies
         imp.LearnByFirstPrinciples(new Object()); //Think with First Principles
         imp.ExpressCuriosity(); //Value knowing something without being programmed to value that specific thing
+        imp.WorkBackwards(new String[]{});//start from the goal and work backwards
 
     }
 }
